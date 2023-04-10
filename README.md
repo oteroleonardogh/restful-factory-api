@@ -26,13 +26,13 @@ PORT=3000
 
 LOG_LEVEL=info
 LOG_ENABLED=true
-LOGGER_NAME=FACTORIES-API-LOG
+LOGGER_NAME=BACKEND-TEST-API
 
-# DB Configuration
+
+# DB config
 POSTGRES_USER=POSTGRES_USER
 POSTGRES_PASSWORD=POSTGRES_PASSWORD
 POSTGRES_DB=POSTGRES_DB
-
 # Comment this line and enable the next one if you ran the in your local machine instead if using docker-compose
 # or alternatively you can also add an entry in your /etc/hosts files with "127.0.0.1  db" 
 POSTGRES_HOST=db
