@@ -10,7 +10,7 @@
 			"name": "Import",
 			"item": [
 				{
-					"name": "Import / Fabrics",
+					"name": "Import / Factories",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -24,9 +24,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{fabric-api-url}}import-fabric",
+							"raw": "{{fabric-api-url}}import-factories",
 							"host": [
-								"{{fabric-api-url}}import-fabric"
+								"{{fabric-api-url}}import-factories"
 							]
 						}
 					},
@@ -47,9 +47,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{fabric-api-url}}import-sprocket",
+							"raw": "{{fabric-api-url}}import-sprockets",
 							"host": [
-								"{{fabric-api-url}}import-sprocket"
+								"{{fabric-api-url}}import-sprockets"
 							]
 						}
 					},
@@ -58,7 +58,7 @@
 			]
 		},
 		{
-			"name": "Fabric",
+			"name": "Factory",
 			"protocolProfileBehavior": {
 				"disabledSystemHeaders": {
 					"user-agent": true
@@ -68,19 +68,19 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{fabric-api-url}}fabric/glkh-ljhjkh-khlkb-hklhjjlkj",
+					"raw": "{{fabric-api-url}}factory/42f20cef-6dec-4a90-a7eb-94b16b6c3f29",
 					"host": [
-						"{{fabric-api-url}}fabric"
+						"{{fabric-api-url}}factory"
 					],
 					"path": [
-						"glkh-ljhjkh-khlkb-hklhjjlkj"
+						"42f20cef-6dec-4a90-a7eb-94b16b6c3f29"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Fabric List",
+			"name": "Factory List",
 			"protocolProfileBehavior": {
 				"disabledSystemHeaders": {
 					"user-agent": true
@@ -90,9 +90,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{fabric-api-url}}fabric",
+					"raw": "{{fabric-api-url}}factory",
 					"host": [
-						"{{fabric-api-url}}fabric"
+						"{{fabric-api-url}}factory"
 					]
 				}
 			},
@@ -109,12 +109,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{fabric-api-url}}sprocket/glkh-ljhjkh-khlkb-hklhjjlkj",
+					"raw": "{{fabric-api-url}}sprocket/285b8577-ca61-4ba6-a000-cc0fed89386f",
 					"host": [
 						"{{fabric-api-url}}sprocket"
 					],
 					"path": [
-						"glkh-ljhjkh-khlkb-hklhjjlkj"
+						"285b8577-ca61-4ba6-a000-cc0fed89386f"
 					]
 				}
 			},
@@ -132,7 +132,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"glkh-ljhjkh-khlkb-hklhjjlkj\",\n    \"sprocketProductionActual\": 30,\n    \"sprocketProductionGoal\": 31,\n    \"time\": 1611304818\n}",
+					"raw": "{\n    \"teeth\": 7,\n    \"pitchDiameter\": 5,\n    \"outsideDiameter\": 6,\n    \"pitch\": 3\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -160,7 +160,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": \"glkh-ljhjkh-khlkb-hklhjjlkj\",\n    \"sprocketProductionActual\": 31,\n    \"sprocketProductionGoal\": 31,\n    \"time\": 1611304818\n}",
+					"raw": "{\n    \"id\": \"ae354d8f-24f0-42f7-9a30-ac4e9bca6a5c\",\n    \"teeth\": 11,\n    \"pitchDiameter\": 5,\n    \"outsideDiameter\": 6,\n    \"pitch\": 1\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -182,12 +182,12 @@
 		"apikey": [
 			{
 				"key": "value",
-				"value": "{{API_TOKEN}}",
+				"value": "",
 				"type": "string"
 			},
 			{
 				"key": "key",
-				"value": "X-Auth-Token",
+				"value": "",
 				"type": "string"
 			}
 		]
@@ -214,13 +214,13 @@
 	],
 	"variable": [
 		{
-			"key": "url",
-			"value": "https://api.football-data.org/",
-			"type": "string"
+			"value": "",
+			"type": "string",
+			"disabled": true
 		},
 		{
-			"key": "import-league-api-url",
-			"value": "http://127.0.0.1:3000/",
+			"key": "fabric-api-url",
+			"value": "http://localhost:3000/",
 			"type": "string"
 		}
 	]
