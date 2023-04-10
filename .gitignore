@@ -1,0 +1,20 @@
+# Node.js dependencies
+node_modules/
+
+# Output directory for TypeScript
+dist/
+
+# .env files
+#.env
+
+# Host persistent volume for DB data
+db-data/
+
+# ESLint cache
+.eslintcache
+
+# Editor and OS-specific files
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
