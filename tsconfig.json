@@ -1,0 +1,14 @@
+{
+ "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.json", "src/**/*.tsx", "src/**/*.js", "src/models/**/*.ts"],
+  "exclude": ["node_modules"]
+}

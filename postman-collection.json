@@ -1,0 +1,227 @@
+{
+	"info": {
+		"_postman_id": "bc060734-17dc-44f7-90f9-6ebc89a97625",
+		"name": "restfull-factory-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21249319"
+	},
+	"item": [
+		{
+			"name": "Import",
+			"item": [
+				{
+					"name": "Import / Fabrics",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"PD\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{fabric-api-url}}import-fabric",
+							"host": [
+								"{{fabric-api-url}}import-fabric"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Import / Sprockets",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"PD\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{fabric-api-url}}import-sprocket",
+							"host": [
+								"{{fabric-api-url}}import-sprocket"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fabric",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{fabric-api-url}}fabric/glkh-ljhjkh-khlkb-hklhjjlkj",
+					"host": [
+						"{{fabric-api-url}}fabric"
+					],
+					"path": [
+						"glkh-ljhjkh-khlkb-hklhjjlkj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fabric List",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{fabric-api-url}}fabric",
+					"host": [
+						"{{fabric-api-url}}fabric"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sprocket",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{fabric-api-url}}sprocket/glkh-ljhjkh-khlkb-hklhjjlkj",
+					"host": [
+						"{{fabric-api-url}}sprocket"
+					],
+					"path": [
+						"glkh-ljhjkh-khlkb-hklhjjlkj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create / Sprocket",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"glkh-ljhjkh-khlkb-hklhjjlkj\",\n    \"sprocketProductionActual\": 30,\n    \"sprocketProductionGoal\": 31,\n    \"time\": 1611304818\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{fabric-api-url}}sprocket",
+					"host": [
+						"{{fabric-api-url}}sprocket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update / Sprocket",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"glkh-ljhjkh-khlkb-hklhjjlkj\",\n    \"sprocketProductionActual\": 31,\n    \"sprocketProductionGoal\": 31,\n    \"time\": 1611304818\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{fabric-api-url}}sprocket",
+					"host": [
+						"{{fabric-api-url}}sprocket"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{API_TOKEN}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "X-Auth-Token",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://api.football-data.org/",
+			"type": "string"
+		},
+		{
+			"key": "import-league-api-url",
+			"value": "http://127.0.0.1:3000/",
+			"type": "string"
+		}
+	]
+}

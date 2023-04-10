@@ -1,0 +1,10 @@
+# Install dependencies
+FROM node:18.15.0-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+# Build the TypeScript code
+COPY . .
+RUN npm run build
+# Start the application
+CMD ["npm", "start"]
