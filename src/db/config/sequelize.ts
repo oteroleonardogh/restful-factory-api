@@ -18,6 +18,7 @@ const sequelize = new Sequelize(
   process.env.POSTGRES_PASSWORD as string,
   {
     host: process.env.POSTGRES_HOST,
+    port: Number(process.env.PGPORT),
     dialect: 'postgres',
     dialectOptions,
     logging: false,
